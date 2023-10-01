@@ -10,7 +10,12 @@ receivesAFunction(callback);
 function returnsANamedFunction(){
     return receivesAFunction;
 }
-receivesAFunction(callback);
-function returnsAnAnonymousFunction(){
-    return returnsAnAnonymousFunction;
+function receiveAfuction(callBack){
+    callback();
 }
+function returnsAnAnonymousFunction(){
+    return function (){
+        console.log("This is an anonymous function");
+    };
+}
+ 
